@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 async function getFornecedores() {
   const res = await fetch ("http://localhost:3000/fornecedores", {
     cache: "no-store",
@@ -11,6 +13,7 @@ export default async function Home() {
   return (
     <main className="p-8">
       <h1 className="text-2x1 font-bold mb-6">Fornecedores</h1>
+      <Link href="/novo" className="bg-blue-600 text-white rounded px-4 py-2 text-sm font-semibold mb-4 inline-block">Novo Fornecedor</Link> 
       <div className="gid gap-4">
         {fornecedores.map((fornecedor)=> (
           <div key={fornecedor.id} className="border rounded p-4">
