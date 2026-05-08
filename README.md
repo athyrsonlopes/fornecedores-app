@@ -23,8 +23,10 @@ npm run dev -- --port 3001
 ## Funcionalidades
 
 - Listagem de fornecedores com nome, CNPJ, categoria e status
-- Dados buscados via SSR (Server Side Rendering)
+- Cadastro de novos fornecedores via formulário
 - Status ativo exibido em verde, inativo em vermelho
+- Dados buscados via SSR (Server Side Rendering)
+- Navegação entre páginas com Next.js App Router
 
 ## Relacionado
 
